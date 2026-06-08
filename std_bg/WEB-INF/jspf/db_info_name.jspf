@@ -1,0 +1,34 @@
+<%@page pageEncoding="UTF-8"%>
+<%
+	// 主檔區										for doweb_backstage 形象大後台
+	String tblap = "ad_profile"; 				// 首頁輪播 廣告 相簿
+	String tblcp = "content_profile"; 			// 文案 檔案下載
+	String tbldm = "down_menu"; 				// 類別資料
+	String tblnp = "news_profile"; 				// 最新消息  
+	String tblpd = "product_detail"; 			// 商品資訊
+	String tblpi = "product_info";				// 產品相關資訊(輪播圖檔)
+	String tblsp = "store_profile"; 			// 服務據點
+	String tblcu = "contact_us"; 				// 聯絡我們
+	String tblos = "order_sheet";				// 詢價單主檔
+	String tblol = "order_list";				// 詢價單明細
+	String tblmp = "member_profile"; 			// 會員資料
+
+	// 校園管理模組
+	String tblfp = "faculty_profile";			// 系所成員基本資料
+	String tblfr = "faculty_related";			// 系所成員相關資料
+	String tblfd = "file_detail";				// 相關檔案/圖檔資訊
+
+	// 特殊管理模組
+	String tblmh = "message_history";			// 簡訊寄送紀錄
+
+	// 系統區
+	String tblal = "admin_log";					// 管理者登入記錄
+	String tblamf = "admin_map_function"; 		// 管理者權限
+	String tblau = "admin_user"; 				// 管理者帳號
+	String tblmf = "mis_function"; 				// 後台功能選單
+	String tblnk = "number_keeper"; 			// 相關表單流水號記錄表 (for IDTool.geUID 元件使用)
+	String tblss = "site_setup"; 				// 全域通用設定
+	String tblst = "smtp_times"; 				// SMTP設定
+	String tblrr = "redirect_record";			// URL 轉址用資料表
+	String tblic = "ip_config";					// 登入IP白名單
+%>
