@@ -1,0 +1,15 @@
+/* 匯入共用最新消息list.css */
+@import url(../../style_nav/style_latest_news/style_latest_news_list.css);
+
+
+
+
+/* ========================================== */
+/* 教學研究 */
+/* ========================================== */
+
+
+/* ===== news_content .img（圖片容器） ===== */
+.research_area .news_content .img {
+  aspect-ratio: 284 / 185.8;
+}

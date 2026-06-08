@@ -1,0 +1,21 @@
+/* 匯入共用最新消息list.css */
+@import url(../style_latest_news/style_latest_news_list.css);
+
+
+
+
+
+/*========================================================*/
+/*-------議題專區內容--------*/
+/*========================================================*/
+
+
+.pageContent_topArea .wrap{
+	max-width: 101.25rem; /*1620*/
+}
+
+
+.newsBottom_top {
+    flex-wrap: wrap;
+}
+

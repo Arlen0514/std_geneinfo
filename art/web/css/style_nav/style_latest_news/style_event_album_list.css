@@ -1,0 +1,250 @@
+
+
+
+/* 在螢幕寬度大於991時，套用這裡的特定樣式 */ 
+@media screen and (min-width: 991px) {
+
+    /* .right_contentBg{
+        padding-top: 0;
+    } */
+
+}
+
+
+
+
+/* =============================================== */
+/* 相簿模組列表 */
+/* =============================================== */
+
+
+.photo_area {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: clamp(1.875rem, 3.074rem + -1.62vw, 1.125rem);
+}
+
+.photo_list {
+	-webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
+	background-color: #fff;
+	border: 1px solid #ededed;
+}
+
+.photo_list:hover {
+	/* transform: translateY(-20px); */
+}
+
+a.photo_list_in {
+	box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+	overflow: hidden;
+	background: #fff;
+	display: block;
+	text-decoration: none;
+	transition: all .2s ease-in;
+}
+
+.photo_info {
+	padding: clamp(0.6452rem, 1.0417vw, 1.2500rem); /* 最小值 10.32px、大小約 1.0417vw、最大值 20.00px */
+	transition: all .2s ease-in;
+	display: flex;
+	flex-direction: column;
+	gap: 0.625rem;
+}
+
+.photo_list:hover .photo_info {
+}
+
+.photo_list:hover .photo_list_in {
+	-webkit-box-shadow: 2px 0 27px rgba(1, 129, 192, 0.3);
+	box-shadow: 2px 0 27px rgba(1, 129, 192, 0.3);
+}
+
+.photo_top{
+	display: flex;
+	gap: inherit;
+	flex-direction: column;
+}
+
+    .photo_top .top{
+
+    }
+        .photo_top .top .date{            
+            display: flex;                        
+            align-items: baseline;                        
+            justify-content: center;                        
+            gap: .625rem;                        
+            color: var(--primary_color);                        
+            width: fit-content;                        
+            font-family: var(--foreign_font2);
+        }
+            .photo_top .top .date .date_dd{                
+                font-size: 2.1875em;                                
+                color: var(--second_color);                                
+                margin: 0;                                
+                font-weight: 400;
+                
+            }
+            .photo_top .top .date .date_ym{                
+                font-size: 0.8125em;                                
+                color: #afafaf;
+            }
+
+        .photo_top .category{
+
+        }
+            
+
+
+
+
+
+
+
+
+
+.photo_title {
+	color: var(--dark_color);
+	font-size: 1em;
+	line-height: 1.25;
+	font-weight: 600;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+    font-family: var(--mandarin_font);
+}
+
+.photo_number {
+	content: "01";
+    /* position: absolute;
+    top: 50%; */
+    /* transform: translate(-31px, -50%); */
+    font-size: calc(16 / 16* 1rem);
+    line-height: 1.5;
+    font-weight: 700;
+    color:var(--primary_color);
+    /* font-family: var(--foreign_font); */
+    /*font-display: swap;*/
+}
+
+.photo_img {
+	position: relative;
+	padding-top: 0;
+	overflow: hidden;
+	display: block;
+	width: 100%;
+	aspect-ratio: 299.9 / 199.9;
+}
+
+.photo_img img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100% !important;
+	height: 100% !important;
+	object-fit: cover;
+	transform: scale(1);
+	transition: all .2s ease-in;
+}
+
+.photo_list:hover .photo_img img {
+	/* transform: scale(1.2); */
+}
+
+
+
+.photo_img::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 0%;
+    background-color: rgba(6 14 49 / 60%);
+    top: 0;
+    left: 0;
+    z-index: 0;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.photo_list:hover .photo_img::after {
+    /* height: 100%; */
+}
+
+
+.photo_description {
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+	color: #686868;
+	font-weight: 500;
+	font-size: 1em;
+	line-height: 1.5;
+    font-family: var(--mandarin_font);
+}
+.photo_list:first-of-type .photo_description {
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px){
+
+    .photo_area{
+        grid-template-columns: repeat(2 , 1fr);
+    }
+
+}
+
+
+@media (max-width: 414px){
+
+    .photo_area{
+        gap: 1.25rem;
+    }
+
+
+}
+
+@media (max-width: 375px){
+
+    .photo_area{
+        grid-template-columns: repeat(1 , 1fr);
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

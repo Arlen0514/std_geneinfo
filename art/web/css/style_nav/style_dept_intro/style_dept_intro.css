@@ -1,0 +1,64 @@
+
+
+.dept_intro_bg{
+
+}
+
+
+
+    .dept_intro_bg .anchor_point_area{
+        
+margin-bottom: clamp(3.268rem, -0.001rem + 4.43vw, 5.313rem);
+    }
+
+
+    .dept_intro_bg .in_titStyle3{
+        
+padding: clamp(1.346rem, 1.82vw, 2.188rem) 0;
+        
+border-bottom: 1px #dadada solid;
+    }
+
+
+
+    .dept_intro_area{
+        
+    }
+
+
+    
+    .dept_intro_section{
+        
+padding: clamp(1.346rem, 1.82vw, 2.188rem) 0;
+        
+border-bottom: 1px #dadada solid;
+    }
+
+        
+        .dept_intro_section .in_titStyle1{
+            
+color: var(--primary_color);
+            
+border-bottom: none;
+        }
+    
+        .dept_intro_section .text_area{
+            
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

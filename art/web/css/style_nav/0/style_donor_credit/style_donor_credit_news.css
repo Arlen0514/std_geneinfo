@@ -1,0 +1,79 @@
+
+/*========================================================*/
+/*-------款與徵信 重要公告 內容--------*/
+/*========================================================*/
+
+
+.donor_credit_news_area{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+    font-size: 1.1875em;
+}
+
+    .donor_credit_news_list{
+        width: 100%;
+    }
+        .donor_credit_news_card{
+            padding: 1.25rem;
+            /* padding-left: calc(1.25rem + 0.9375rem); */
+            border: 1px var(--second_color) dashed;
+            background-color: #fff;
+            display: flex;
+            gap:clamp(0.4839rem, 0.7813vw, 0.9375rem); /* 7.74px , 0.7813vw , 15.00px */
+        }
+            .donor_credit_news_list .date{
+                color: var(--primary_color);
+                font-size: 0.875rem;
+                font-weight: 400;
+                line-height: 1;
+                position: relative;
+                display: flex;
+                align-items: center;
+                gap: clamp(0.4839rem, 0.7813vw, 0.9375rem); /* 7.74px , 0.7813vw , 15.00px */
+            }
+            .donor_credit_news_list .date:before {
+                content: "";
+                /* position: absolute; */
+                /* top: 50%; */
+                /* left: 15px; */
+                /* transform: translateY(-50%); */
+                width: 7px;
+                height: 10px;
+                background: url(
+                ../../../images/com_sp01.png)no-repeat -240px -40px;
+            }
+            .donor_credit_news_list .title{
+            
+            }
+                .donor_credit_news_list .title a {
+                    color: inherit;
+                    font-size: inherit;
+                    line-height: inherit;
+                    text-decoration: none;
+                    display: block;
+                    transition: 0.3s  ease all;
+                    position: relative;
+                    /* padding-left: 35px; */
+                    display: -webkit-box;
+                    -webkit-box-orient: vertical;
+                    -webkit-line-clamp: 1;
+                    overflow: hidden;
+                }
+
+    
+/* 在螢幕寬度大於1101時，套用這裡的特定樣式 */
+@media screen and (min-width: 1180.1px) {
+
+}
+
+
+
+@media (max-width: 1100px) {
+
+    .donor_credit_news_area{
+        font-size: 1em;
+    }
+
+}

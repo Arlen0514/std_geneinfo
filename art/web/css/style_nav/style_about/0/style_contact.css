@@ -1,0 +1,21 @@
+
+
+.right_contentBg{
+    display: flex;
+    flex-direction: column;
+    row-gap: clamp(0.9678rem, 1.5625vw, 1.8750rem); /* 15.48px , 1.5625vw , 30.00px */
+}
+
+
+    .contactArea{
+        
+    }
+
+         .contactArea .form_area{
+            background-color: #fff;
+            padding: clamp(0.9678rem, 1.5625vw, 1.8750rem); /* 15.48px , 1.5625vw , 30.00px */
+            
+        }
+         .contactArea .btn_area{
+            
+        }

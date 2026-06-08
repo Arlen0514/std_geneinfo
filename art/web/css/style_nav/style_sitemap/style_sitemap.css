@@ -1,0 +1,124 @@
+
+
+
+
+
+.right_contentBg{
+  
+}
+
+
+.sitemap_bg{
+  display: flex;
+  flex-direction: column;
+  gap: clamp(1.153rem, -0.999rem + 2.92vw, 2.5rem);
+}
+
+  /* 無障礙網站操作說明 */
+  .sitemap_bg .accessibility-guide-text{
+    font-size: 1em;
+    line-height: 1.58;
+    color: var(--dark_color);
+    padding-bottom: clamp(1.346rem, 1.82vw, 2.188rem);
+    border-bottom: 1px #dadada solid;
+  }
+
+  .sitemap_bg .accessibility-guide-text img {
+    max-width: 100%;
+    height: auto;
+  }
+  .sitemap_bg .accessibility-guide-text iframe ,
+  .sitemap_bg .accessibility-guide-text table{
+    max-width: 100%;
+  }
+
+
+
+
+
+
+
+
+/*/////////////////////////////////////////////////////////*/
+/*-------網站導覽--------*/
+/*/////////////////////////////////////////////////////////*/
+
+.sitemap_area {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  font-weight: 500;
+
+  display: grid;
+  grid-template-columns: repeat(5 , 1fr);
+  gap: clamp(1.153rem, -0.001rem + 1.56vw, 1.875rem);
+}
+
+  .sitemap {
+  }
+    
+    .sitemap_group_title {
+      color: var(--primary_color);
+      font-weight: 600;
+      font-size: 1.0625em;
+    }
+      .sitemap_group_title a {
+        color: var(--primary_color);
+        text-decoration: none;
+        font-weight: inherit;
+        font-size: inherit;
+      }
+
+    .sitemap_group{
+      display: flex;
+      flex-direction: column;
+      gap: .9375rem;
+    }
+      .sitemap_link {
+        color: var(--primary_color);
+        font-weight: inherit;
+        font-size: 1em;
+      }
+        .sitemap_link a {
+          color: var(--dark_color);
+          text-decoration: none;
+          font-weight: inherit;
+        }
+
+      .sitemap_group_title a ,
+      .sitemap_link a {
+        transition: var(0.3s ease all);
+      }
+      .sitemap_group_title a:hover ,
+      .sitemap_link a:hover {
+        color: var(--second_color);
+        transition: var(0.3s ease all);
+      }
+
+
+
+@media (max-width: 1180px) {
+
+  .sitemap_area {
+    grid-template-columns: repeat(4 , 1fr);
+  }
+
+}
+
+@media (max-width: 768px) {
+  .sitemap_area {
+    grid-template-columns: repeat(3 , 1fr);
+  }
+}
+
+@media (max-width: 510px) {
+  .sitemap_area {
+    grid-template-columns: repeat(2 , 1fr);
+  }
+}
+
+@media (max-width: 375px) {
+  .sitemap_area {
+    grid-template-columns: repeat(1 , 1fr);
+  }
+}

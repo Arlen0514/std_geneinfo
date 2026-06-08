@@ -1,0 +1,91 @@
+/* 匯入共用連結.css */
+@import url(../../style_nav/style_link/style_link.css);
+
+/* ========================================================== */
+/* 相關鏈接 */
+/* ========================================================== */
+
+.link_bg{
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem; /*20*/
+}
+
+
+.link_list_area{
+    font-size: unset;
+}
+
+.link_list {
+    padding:0;    
+}
+    .link_list a{
+       flex-grow: 1;
+       padding: 1.25rem;
+       padding-left: calc(1.25rem + 0.9375rem);
+       border: 1px var(--second_color) dashed;
+       background-color: #fff;
+       display: flex;
+       flex-direction: column;
+    }
+    
+    .link_list  strong{
+        display: block;
+        font-weight: inherit;
+        line-height: inherit;
+        font-size: 1.1875em;
+        padding: 0;
+        margin: 0;
+
+        white-space: nowrap;
+        text-overflow:ellipsis;
+        overflow: hidden;
+    }
+
+    .link_list .description{
+        flex-grow: 1;
+        color: #696969;
+        font-size: 1em;
+        font-weight: 400;
+        line-height: 1.5;
+        margin-top: clamp(0.3226rem, 0.5208vw, 0.625rem); /* 5.16px , 0.5208vw , 10.00px */
+        /* display: -webkit-box; */
+        /* -webkit-box-orient: vertical; */
+        /* -webkit-line-clamp: 3; */
+        /* overflow: hidden; */
+    }
+
+    .link_list a:before {
+		content: "";
+		position: absolute;
+		/* top: 50%; */
+        top: calc(1.25rem + (0.625rem / 2));
+		left: 15px;
+		/* transform: translateY(-50%); */
+		width: 0.4375rem;
+		height: 0.625rem;
+		background: url(
+		../../../images/com_sp01.png)no-repeat -240px -40px;
+	}	
+	
+
+
+
+    
+/* 在螢幕寬度大於991時，套用這裡的特定樣式 */
+@media screen and (min-width: 1180.1px) {
+
+    .link_list_area {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 1.0417vw; /*20px*/
+    }
+        .link_list {
+            width: calc((100% / 2) - (1 * 1.0417vw / 2)); /* 2欄平均寬度，扣除間距 */
+            display: flex;
+            flex-direction: column;
+            /* height: 100%; */
+            flex-grow: 1;
+        }
+}

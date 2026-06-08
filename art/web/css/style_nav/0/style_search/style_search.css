@@ -1,0 +1,22 @@
+
+
+
+
+	
+/*內頁內容區塊*/
+.pageContent{
+	padding: clamp(1.6130rem, 2.6042vw, 3.1250rem) 0; /* 25.81px , 2.6042vw , 50.00px */
+}
+
+
+
+
+
+	.searchContent{
+		margin-bottom:  clamp(1.5625rem, 1.5625vw, 1.8750rem); /* 25.00px , 1.5625vw , 30.00px */
+	}
+
+    .searchContent .form_remark{
+		/* margin-top: 15px; */
+	}
+

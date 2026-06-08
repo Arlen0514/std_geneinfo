@@ -1,0 +1,136 @@
+
+		.alliance_area{
+			margin: 0;
+			padding: 0;
+			list-style-type : none;
+			display: block;
+			color: var(--dark_color_sec);
+			font-weight: 400;
+			line-height: 1.25;
+			display: flex;
+			flex-direction: column;
+			gap: 10px;
+		}
+
+            .alliance_area li{
+				margin: 0;
+				padding: 0;
+				list-style-type : none;
+				display: block;
+			}
+                .alliance_list{
+					gap:clamp(0.6452rem, 1.0417vw, 1.2500rem); /* 10.32px , 1.0417vw , 20.00px */
+					display: flex;
+					/* align-items: center; */
+				}
+                    .alliance_area .img{
+						min-width:clamp(5.4840rem, 8.8542vw, 10.6250rem); /* 87.74px , 8.8542vw , 170.00px */
+						display: none;
+					}
+                         .alliance_area .img a{
+							position: relative;
+							/* width: 168.792px; */
+							/* height: 125.821px; */
+							/* flex-shrink: 0; */
+							aspect-ratio: 55 / 41;
+							display: block;
+							overflow: hidden;
+						 }
+                         .alliance_area .img img{
+							width: 100%;
+							height: 100%;
+							object-fit: cover;
+							position: absolute;
+							top: 0;
+							left: 0;
+							bottom: 0;
+							right: 0;
+							float: none;
+							width: 100% !important;
+							height: 100% !important;
+							object-fit: cover;
+							transition: 0.3s ease all;
+							border-radius: 5px;
+							}
+
+
+					.alliance_info{
+						display: flex;
+						gap: clamp(0.8710rem, 1.4063vw, 1.6875rem); /* 13.94px , 1.4063vw , 27.00px */
+						border-bottom: 1px solid #D7D2D2;
+						align-items: center;
+						width: 100%;
+					}
+					.alliance_area .date{
+						font-size: 0.875em;
+						font-weight: 400;
+						line-height: normal;
+					}
+					.alliance_area .tag{
+						font-size: 1em;
+						/* line-height: 1.25; */
+						display: none;
+					}
+						.alliance_area .tag a{
+							color: inherit;
+							text-decoration: none;
+
+							white-space: nowrap;
+							text-overflow:ellipsis;
+							overflow: hidden;
+						}
+
+					.alliance_area .title{
+						font-size: 1.1875em;
+						padding: clamp(0.9678rem, 1.5625vw, 1.8750rem) 0; /* 15.48px , 1.5625vw , 30.00px */
+						/* width: 100%; */
+					}
+						.alliance_area .title a{
+							color: inherit;
+							text-decoration: none;
+
+                            display: -webkit-box;
+                            -webkit-box-orient: vertical;	
+                            -webkit-line-clamp: 3;	
+                            overflow: hidden;
+							/* white-space: nowrap; */
+							/* text-overflow:ellipsis; */
+							/* overflow: hidden; */
+						}
+
+
+
+
+
+
+
+
+
+/* 在螢幕大於991時，套用這裡的特定樣式 */
+@media screen and (min-width: 1180.1px) {
+
+}
+
+
+
+@media (max-width:1100px){
+
+    .index_allianceBg{
+		/*background-color: var(--seventh_color);
+    	padding: clamp(2.1875rem, 2.8125vw, 3.3750rem) 0 ;*/ /* 35px , 2.8125vw , 54.00px */
+	}
+	/* .index_allianceBg::after {
+		display: none;
+	}
+		.index_alliance_area {
+			background-color: transparent;
+		} */
+
+
+		/* 裝飾------------------------- */
+		/* .index_alliance_decorate{
+			display: none;
+		} */
+
+}
+

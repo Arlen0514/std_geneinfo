@@ -1,0 +1,179 @@
+
+
+
+
+                            .event_album_bg{
+                                display: flex;
+                                flex-direction: column;
+                                row-gap: clamp(1.346rem, 1.82vw, 2.188rem);
+                            }
+
+                                .event_album_area{
+
+                                }
+
+                                     .event_album_area .event_album_item{
+                                        display: -ms-flexbox;
+                                        display: flex;
+                                        padding: clamp(1.346rem, 1.82vw, 2.188rem) 0 ;
+                                        border-bottom: 1px #dadada solid;
+                                    }
+                                     .event_album_area .event_album_item:first-of-type{
+                                        padding-top: 0;
+                                    }
+                                        .event_album_area .event_album_left{
+
+                                        }
+
+                                        .event_album_area .event_album_right{
+
+                                        }
+
+
+
+                                            .event_album_area .event_album_img{
+                                                position: relative;
+                                                aspect-ratio: 951 / 643;
+                                                display: block;
+                                                overflow: hidden;
+                                            }
+                                                .event_album_area .event_album_img img{
+                                                    width: 100%;
+                                                    height: 100%;
+                                                    object-fit: cover;
+                                                    position: absolute;
+                                                    top: 0;
+                                                    left: 0;
+                                                    bottom: 0;
+                                                    right: 0;
+                                                    float: none;
+                                                    width: 100% !important;
+                                                    height: 100% !important;
+                                                    object-fit: cover;
+                                                    transition: 0.3s ease all;
+                                                }
+
+                                    .event_album_area .text_area{
+                                        font-size: 1em;
+                                        line-height: 1.5;
+                                    }
+
+
+                                     .event_album_bg > .text_area:first-of-type{
+                                        padding-bottom: clamp(1.346rem, 1.82vw, 2.188rem) ;
+                                        border-bottom: 1px #dadada solid;
+                                     }
+
+
+
+
+/* 在螢幕寬度大於1180時，套用這裡的特定樣式 */
+@media screen and (min-width: 1180.1px) {
+
+    .in_titStyle2{
+    }
+    .page:not(.page_vertical) .wrap{
+        max-width: 100%;
+        width: 100%;
+    }
+    .page:not(.page_vertical) .right.no_left{
+       padding-left: 0;
+       padding-right: 0;
+    }
+
+        .in_titStyle2 ,
+        .event_album_bg > .text_area ,
+        .btn_area.three {
+            width: calc(100% - (1.25rem * 2));
+            max-width: 85rem;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+
+        .event_album_area .event_album_item{
+
+        }
+        .event_album_area .event_album_item:nth-child(2n+1){
+
+        }
+        .event_album_area .event_album_item:nth-child(2n){
+            /* flex-direction: row-reverse; */
+        }
+
+
+            .event_album_area .event_album_left{
+                -ms-flex-negative: 0;
+                flex-shrink: 0;
+                width: 50%;
+            }
+
+            .event_album_area .event_album_right{
+                
+                width: calc((100% - (100% - clamp(49.977rem, 0.001rem + 67.71vw, 81.25rem))) / 2);
+                -ms-flex-negative: 0;
+                flex-shrink: 0;
+                padding: clamp(1.153rem, -0.001rem + 1.56vw, 1.875rem) clamp(2.691rem, 3.65vw, 4.375rem);
+                display: -ms-flexbox;
+                display: flex;
+                -ms-flex-align: center;
+                align-items: center;
+                -ms-flex-pack: center;
+                justify-content: center;
+                box-sizing: border-box;
+                padding-right: 0;
+            }
+
+}
+
+
+
+@media (max-width: 1180px){
+
+    .event_album_area .event_album_item{
+        display: flex;
+        flex-direction: column;
+        row-gap: clamp(1.346rem, 1.82vw, 2.188rem) ;
+    }
+
+    .event_album_area .event_album_left{
+        width: 100%;
+    }
+
+    .event_album_area .event_album_right{
+        width: 100%;
+    }
+
+}
+
+
+@media (max-width: 414px){
+
+    .photo_area{
+        gap: 1.25rem;
+    }
+
+
+}
+
+@media (max-width: 375px){
+
+    .photo_area{
+        grid-template-columns: repeat(1 , 1fr);
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

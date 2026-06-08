@@ -1,0 +1,194 @@
+/* Accessibility */
+
+
+
+
+
+
+
+/* 導盲磚_跳到中央內容區塊----------------- */
+/* .main > a.maincontent */
+a.maincontent {
+  position: absolute;
+  top: 0;
+  font-size: 0.7em;
+  line-height: 1;
+  color: #fff0;
+  z-index: 1;
+  padding: 5px;
+  display: inline-block;
+  text-decoration: none;
+  z-index: 5;
+  /* top: 150px; */
+  /* opacity: 0; */
+  z-index: 999;
+}
+/* .main > a.maincontent.fixed */
+a.maincontent.fixed {
+}
+a.maincontent:focus{
+  opacity: 1;
+}
+
+
+
+
+.main.indexMain > a#maincontent ,
+.main.inMain > a#maincontent {
+    position: absolute;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*AA檢測備註*/
+.detection_aa {
+  display: none;
+}
+
+
+a:active, a:hover {
+    /* text-decoration: none;
+    color: #fff; */
+}
+
+a:active,
+a:focus {
+  text-decoration: none;
+  /* background-color: var(--focus_color) !important; */
+  /* color: #fff !important; */
+/* 3px dashed #fabe00; */
+  outline-width:var(--focus_outline-width);
+  outline-style: var(--focus_outline-style);
+  outline-color: var(--focus_outline-color);
+}
+
+.navTitle>a:focus {
+	box-sizing: border-box;
+	/* color: var(--focus_color) !important; */
+    outline-width: var(--focus_outline-width) !important;
+    outline-style: var(--focus_outline-style) !important;
+    outline-color: var(--focus_outline-color) !important;
+    background-color: transparent !important;
+}
+
+.navTitle>a:active {
+    outline-width: 0 !important;
+    outline-style: none !important;
+    outline-color: transparent !important;
+	color: var(--focus_color) !important;
+	background-color: transparent !important;
+}
+
+.footer_nav a:active,
+.footer_nav a:focus,
+.nav_title a:active,
+.nav_title a:focus {
+  /*outline: 0 dashed var(--focus_color) !important;
+  background-color: var(--focus_color) !important;
+   color: #fff !important; */
+  outline-width:var(--focus_outline-width);
+  outline-style: var(--focus_outline-style);
+  outline-color: var(--focus_outline-color);
+}
+
+input[type="checkbox"]:active,
+input[type="checkbox"]:focus,
+input[type="radio"]:active,
+input[type="radio"]:focus {
+  /* background-color: var(--focus_color) !important;
+  color: #fff !important; */
+  transition: 0.2s ease all;
+
+  outline-width:var(--focus_outline-width);
+  outline-style: var(--focus_outline-style);
+  outline-color: var(--focus_outline-color);
+}
+
+button:active,
+button:focus,
+input[type="email"]:active,
+input[type="email"]:focus,
+input[type="password"]:active,
+input[type="password"]:focus,
+input[type="tel"]:active,
+input[type="tel"]:focus,
+input[type="text"]:active,
+input[type="text"]:focus,
+input[type="url"]:active,
+input[type="url"]:focus,
+input[type="search"]:active,
+input[type="search"]:focus,
+input[type="time"]:active,
+input[type="time"]:focus,
+input[type="number"]:active,
+input[type="number"]:focus,
+input[type="date"]:active,
+input[type="date"]:focus {
+  /* background-color: var(--focus_color) !important;
+  color: #fff !important; */
+  box-sizing: border-box;
+
+  outline-width:var(--focus_outline-width);
+  outline-style: var(--focus_outline-style);
+  outline-color: var(--focus_outline-color);
+}
+.inputFile input[type="text"]:active,
+.inputFile input[type="text"]:focus {
+  /* background: var(--focus_color); */
+
+ outline-width:var(--focus_outline-width);
+  outline-style: var(--focus_outline-style);
+  outline-color: var(--focus_outline-color);
+}
+
+input[type="button"]:active,
+input[type="button"]:focus,
+input[type="reset"]:active,
+input[type="reset"]:focus,
+input[type="submit"]:active,
+input[type="submit"]:focus {
+  opacity: 1;
+  /* line-height: 2.375em; */
+  /* color: #fff !important;
+  background-color: var(--focus_color) !important;
+  border-color: var(--focus_color);*/
+  box-sizing: border-box; 
+
+  outline-width:var(--focus_outline-width);
+  outline-style: var(--focus_outline-style);
+  outline-color: var(--focus_outline-color);
+}
+
+select:active,
+select:focus {
+  /* color: #fff !important;
+  background-color: var(--focus_color) !important;
+  border-color: var(--focus_color); */
+
+  outline-width:var(--focus_outline-width);
+  outline-style: var(--focus_outline-style);
+  outline-color: var(--focus_outline-color);
+}
+
+textarea:active,
+textarea:focus {
+  /* color: #fff !important;
+  background-color: var(--focus_color) !important; */
+  outline-width:var(--focus_outline-width);
+  outline-style: var(--focus_outline-style);
+  outline-color: var(--focus_outline-color);
+}
+
+
+

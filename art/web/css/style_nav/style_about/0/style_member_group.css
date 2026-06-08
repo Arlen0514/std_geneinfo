@@ -1,0 +1,76 @@
+/* 匯入共用連結.css */
+@import url(../../style_nav/style_link/style_link.css);
+
+/* ========================================================== */
+/* 相關鏈接 */
+/* ========================================================== */
+
+.member_group_bg{
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem; /*20*/
+}
+
+
+.link_list {
+    padding:0;    
+} 
+    .link_list a{
+       /* 調整 新增logo img modify by Joanna 20251114  */ 
+       padding: 1.25rem;
+       /* padding-left: calc(1.25rem + 0.9375rem); */
+       border: 1px var(--second_color) dashed;  
+       background-color: #fff;
+       display: flex;
+       align-items: center;
+       gap: .5rem;
+    }
+    .link_list img{
+        /* 調整 新增logo img modify by Joanna 20251114  */
+        width: 2.1875rem;
+        aspect-ratio: 1;
+        object-fit: cover;
+    }
+    
+    .link_list  strong{
+        display: block;
+        font-weight: inherit;
+        line-height: inherit;
+        font-size:inherit;
+        padding: 0;
+        margin: 0;
+
+        white-space: nowrap;
+        text-overflow:ellipsis;
+        overflow: hidden;
+    }
+
+    /* .link_list a:before {
+		content: "";
+		position: absolute;
+		top: 50%;
+		left: 15px;
+		transform: translateY(-50%);
+		width: 7px;
+		height: 10px;
+		background: url(
+		../../../images/com_sp01.png)no-repeat -240px -40px;
+	}	 */
+	
+
+
+
+    
+/* 在螢幕寬度大於991時，套用這裡的特定樣式 */
+@media screen and (min-width: 1180.1px) {
+
+    .link_list_area {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 1.0417vw; /*20px*/
+    }
+        .link_list {
+            width: calc((100% / 2) - (1 * 1.0417vw / 2)); /* 2欄平均寬度，扣除間距 */ 
+        }
+}

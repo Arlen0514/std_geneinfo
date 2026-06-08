@@ -1,0 +1,34 @@
+@import url(../style_about/style_download.css);
+
+
+/*========================================================*/
+/*-------出版品專區 內頁 內容--------*/
+/*========================================================*/
+
+
+
+.right_contentBg{
+    display: flex;
+    flex-direction: column;
+    row-gap: clamp(0.9678rem, 1.5625vw, 1.8750rem); /* 15.48px , 1.5625vw , 30.00px */
+}
+
+.share_bg{
+  padding-bottom: 0;
+}
+
+
+    .text_area{
+
+    }
+
+    .link_area{
+
+    }
+
+
+    
+/*按鈕*/
+.btn_area {
+	margin-top:  clamp(0.5484rem, 0.8854vw, 1.0625rem); /* 8.77px , 0.8854vw , 17.00px */
+}

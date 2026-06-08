@@ -1,0 +1,113 @@
+/*==============================================================*/
+/*連結模組CSS*/
+/*==============================================================*/
+
+.link_bg {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: stretch;
+  flex-wrap: wrap;
+  gap: clamp(2.307rem, 2.306rem + 0vw, 2.307rem);
+  font-size: .875em;
+  width: 100%;
+}
+.link_bg .link_list {
+  width: calc((100% / 3) - (2 * clamp(2.307rem, 2.306rem + 0vw, 2.307rem) / 3));
+}
+
+/* 卡片樣式 */
+.link_bg .link_list .item a {
+  text-decoration: none;
+  transition: var(--transition-data, 0.3s ease all);
+  display: flex;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  /* padding: 0.6250rem 0.6250rem; */
+  padding: clamp(0.769rem, 1.04vw, 1.25rem) clamp(1.153rem, -0.001rem + 1.56vw, 1.875rem);
+  background-color: #fff;
+  box-shadow: 2px 0 13px rgba(94, 194, 244, 0.3);
+  border-radius: 5px;
+  color: var(--primary_color);
+  flex-grow: 1;
+  gap: 0.6250rem;
+  min-height: 5.9375rem;
+}
+.link_bg .link_list .item a:hover,
+.link_bg .link_list .item a:focus-visible {
+  transform: scale(1.05);
+  background-color: var(--second_color);
+}
+.link_bg .link_list .item a:hover .Txt,
+.link_bg .link_list .item a:focus-visible .Txt {
+  color: rgb(255, 255, 255);
+}
+
+/* 卡片圖示 */
+.link_bg .link_list .Img {
+  background-color: rgb(242, 248, 252);
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.link_bg .link_list .Img img {
+  border-radius: 50%;
+  width: 2.5000rem;
+  height: auto;
+}
+
+/* 卡片文字 */
+.link_bg .link_list .Txt {
+  letter-spacing: 1px;
+  line-height: 1.3;
+  font-weight: 600;
+  display: block;
+  color: #5a5a5a;
+}
+
+
+
+
+
+@media (max-width:768px) {
+
+	.link_bg .link_list {
+	width: calc((100% / 2) - (1 * clamp(2.307rem, 2.306rem + 0vw, 2.307rem) / 2));
+	}
+
+}
+
+
+@media (max-width:414px) {
+
+
+.link_bg .link_list {
+  width:100%;
+}
+
+.link_bg .linkBoxArea{
+  margin-bottom: 0;
+}
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+

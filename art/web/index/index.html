@@ -1,0 +1,1040 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html dir="ltr" lang="zh-TW" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/><!--讓ie在切換瀏覽器模式時 文件模式會使用最新的版本-->
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<meta name="Robots" content="none" /><!--不被搜尋引擎搜到-->
+
+<!--RWD用-->
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<!--RWD用-->
+
+<!--android 手機板主題顏色用 更改網址列顏色-->
+<meta name="theme-color" content="var(--primary_color)">
+<!--android 手機板主題顏色用-->
+
+<meta name="format-detection" content="telephone=no"><!--取消行動版 safari 自動偵測數字成電話號碼-->
+
+<title>國立台北教育大學-教育學院</title>
+<link rel="shortcut icon" href="../images/favicon.png" /><!--電腦版icon-->
+<link rel="apple-touch-icon" href="../images/icon.png" /><!--手機版icon  57x57px-->
+<link rel="apple-touch-icon" sizes="72x72" href="../images/icon-72.png" /><!--手機版icon  72x72px-->
+<link rel="apple-touch-icon" sizes="114x114" href="../images/icon@2.png" /><!--手機版icon  114x114px-->
+
+<link href="../css/style.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="../css/style_header.css"/>
+<link rel="stylesheet" type="text/css" href="../css/style_footer.css"/>
+
+<!--google material icon-->
+<link rel="stylesheet" href="../icon_fonts/material_icons/material-icons.css">
+
+<script src="../js/jquery-1.10.2.min.js" type="text/javascript"></script>
+
+<!--jquery更新版本start 20170603-->
+<!--<script src="../js/jquery-1.11.1.js" type="text/javascript"></script>-->
+<!--jquery更新版本end 20170603-->
+
+<script src="../js/jquery-migrate-1.2.1.min.js" type="text/javascript"></script>
+
+<script src="../js/common.js" type="text/javascript"></script><!--JavaScript共用區-->
+
+<!--漣漪效果 第一塊 start-->
+<link href="../js/ripples/ripples.css" rel="stylesheet" type="text/css" />
+<script src="../js/ripples/material.js" type="text/javascript"></script>
+<script src="../js/ripples/ripples.min.js" type="text/javascript"></script>
+<!--漣漪效果 第一塊 end-->
+	
+<!--輪播特效 第一塊 開始-->
+<link rel="stylesheet" href="../js/swiper/idangerous.swiper.css" />
+<!--輪播特效 第一塊 結束-->
+ 
+    
+<!--新增修改banner套件 modify by pekey 20190625 start-->    
+<!--輪播特效 第一塊 開始-->
+<link rel="stylesheet" type="text/css" href="../js/swiper-master/css/swiper.css"/>
+<!--輪播特效 第一塊 結束-->
+<!--新增修改banner套件 modify by pekey 20190625 end-->
+    
+<!--更換網站顏色css-->
+<link rel="stylesheet" type="text/css" href="../css/changecolor.css"/>
+
+<!--外嵌英文字型--> 
+<link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+ 
+<!--loading畫面-->
+<!--<script>
+	$(window).load(function(){
+			$('#loading').hide();
+	});
+</script>  -->
+
+
+<!--字級變化特效-->
+<script type="text/javascript">
+	$(function(){
+		var percentage = [
+							"htmlFontSizeA",
+							"htmlFontSizeB",
+							"htmlFontSizeC"
+						];
+						  
+		$("html").addClass(percentage[1]);
+		$('#fontA').click(function(e) {
+			$("html").removeClass().addClass(percentage[0]);
+		});	
+		$('#fontB').click(function(e) {
+			$("html").removeClass().addClass(percentage[1]);
+		});	
+		$('#fontC').click(function(e) {
+			$("html").removeClass().addClass(percentage[2]);
+		});		
+				
+	});
+</script>
+
+
+
+<!--導盲磚特效-->
+<script>
+    $(document).ready(function () {
+
+        if (document.location.hash) {
+            var myAnchor = document.location.hash;
+            $(myAnchor).attr('tabindex', -1).on('blur focusout', function () {
+                $(this).removeAttr('tabindex');
+            }).focus().yellowFade();
+        }
+
+        $(window).bind('hashchange', function () {
+            var hash = "#" + window.location.hash.replace(/^#/, '');
+            if (hash != "#") {
+                $(hash).attr('tabindex', -1).on('blur focusout', function () {
+                    $(this).removeAttr('tabindex');
+                }).focus().yellowFade();
+            }
+            else {
+                $("#headcontainer").attr('tabindex', -1).on('blur focusout', function () {
+                    $(this).removeAttr('tabindex');
+                }).focus();
+            }
+        });
+    });
+</script>
+
+
+<!--設計師測試更換網站顏色用  可刪  start-->
+<script type="text/javascript" src="../js/jquery.cookie.js"></script>    
+<script type="text/javascript">
+	$(function() {
+		//添加樣式
+		$(".changeColorSubmit").click(function(e) {
+			var textColor = $("#changeTextColor option:selected").attr("data-val");
+			var bgColor = $("#changeBackgroundColor option:selected").attr("data-val");
+
+			if (textColor == "tC_white" && bgColor == "bC_white") {
+				alert("相同顏色無法使用");
+				return;
+			}
+			if (textColor == "tC_black" && bgColor == "bC_black") {
+				alert("相同顏色無法使用");
+				return;
+			}
+			if (textColor == "bC_default" || bgColor == "bC_default") {
+				alert("請選文字顏色及擇背景顏色");
+				return;
+			} else {
+				$("body").removeClass();
+				$("body").addClass(textColor);
+				$("body").addClass(bgColor);
+			}
+			;
+		});
+
+		//移除樣式
+		$(".changeColorReset").click(function(e) {
+			$("body").removeClass();
+		});
+	});
+</script>    
+
+
+</head>
+
+<body>
+	
+	<!--loading畫面-->
+	<!--<div id="loading" class="loading">
+        <div id="circularG">
+            <div id="circularG_1" class="circularG"></div>
+            <div id="circularG_2" class="circularG"></div>
+            <div id="circularG_3" class="circularG"></div>
+            <div id="circularG_4" class="circularG"></div>
+            <div id="circularG_5" class="circularG"></div>
+            <div id="circularG_6" class="circularG"></div>
+            <div id="circularG_7" class="circularG"></div>
+            <div id="circularG_8" class="circularG"></div>
+        </div>
+        <div class="loading_tit">
+            
+            loading...
+        </div>    
+	</div>-->
+    
+    
+    <!--版頭-->
+    <div class="header" id="top">
+    	
+        <!--導盲磚-->
+        <div class="Tactile_paving">
+        	<a accesskey="U" href="#headercontent" title="版頭區" class="headercontent" id="headercontent"> ::: </a>
+        </div>
+
+		<!--版頭左測區塊--> 
+        <div class="header_leftArea">  
+             
+			<!--Judy修改20200515_Start-->
+            <a accesskey="C" href="#maincontent" onclick="javascript:$('#maincontent').focus();" title="跳到主要內容區" class="maincontent2" > ::: </a>
+			<!--Judy修改20200515_end-->  
+              
+            <div class="wrap"> 
+                    
+                <!--手機menu按鍵-->
+                <div class="menu_btn">
+                    <span>
+                    </span>
+                    <span>
+                    </span>
+                    <span>
+                    </span>
+                </div>                
+                          
+                <!--版頭內容區塊-->
+                <div class="header_inArea">
+
+                    <!--logo-->
+                    <div class="logo">
+                        <!--Judy修改20200515_Start-->
+                            <h1>
+                                <a href="../index/index.html">
+                                    <img src="../images/logo.png" alt="logo" title=" " class="logo_pc"  />
+                                    <img src="../images/logo_mobile.png" alt="logo" title=" " class="logo_mobile" />
+                                    <img src="../images/logo_2.png" alt="logo" title=" " class="logo_pc_w" />
+                                </a>
+                            </h1>                        
+                        <!--Judy修改20200515_end-->
+                    </div>
+                    
+                    <!--主按鍵-->
+                    <div class="navbar">
+    
+                        <!--手機版語系區塊-->
+                        <div class="nav language">
+                            <div class="languageList">
+                                <a href="#">
+                                    TW
+                                </a>
+                            </div>
+                            <div class="languageList">
+                                <a href="#">
+                                    EN
+                                </a>
+                            </div>
+                            
+                            <div class="clearfloat">
+                            </div>
+                        </div>
+                        
+                        <!--手機版搜尋區塊-->
+                        <div class="nav search">
+                            <div class="search_inAreaMB">
+                                <input type="text">
+                                <label>
+                                    <i class="material-icons"></i>
+                                    <input type="submit" value="">
+                                </label>
+                            </div>
+                        </div>
+    
+                        <!--關於學院-->
+                        <div class="nav">
+                            <a href="../about/dean.html">
+                                關於學院
+                            </a>
+                        </div>                    
+        
+                        <!--最新消息-->
+                        <div class="nav">
+                            <a href="../news/news.html">
+                                最新消息
+                            </a>
+                        </div>   
+
+                        <!--系所學程-->
+                        <div class="nav">
+                            <a href="../program/program.html">
+                                系所學程
+                            </a>
+                        </div>    
+        
+                        <!--教研平台-->
+                        <div class="nav">
+                            <a href="../research/research.html">
+                                教研平台
+                            </a>
+                        </div>  
+                                
+                        <!--法規與會議-->
+                        <div class="nav">
+                            <a href="../rule/rule.html">
+                                法規與會議
+                            </a>
+                        </div> 
+                             
+                        <!--活動資訊-->
+                        <div class="nav">
+                            <a href="../activity/activity.html">
+                                活動資訊
+                            </a>
+                        </div>  
+                                                
+                        <div class="clearfloat">
+                        </div>
+                    </div>
+        
+                    <div class="clearfloat">
+                    </div>  
+                        
+                </div>
+          
+            </div> 
+        </div> 
+        
+
+        <!--版頭右測區塊--> 
+        <div class="header_rightArea">  
+                           
+     		<div class="wrap"> 
+            
+                <!--PC版_搜尋區塊-->
+                <div class="search_areaPC">
+                    <div class="search_inAreaPC">
+                        <!--輸入框-->
+                        <div class="search_inputAreaPC">
+                            <input type="text">
+                        </div>
+                        
+                        <!--按鈕-->
+                        <label>
+                            <i class="material-icons" id="search_btnPC">search</i>
+                        </label>
+                    </div>
+                </div>
+                
+                <!--PC版_外連區塊-->
+                <div class="headerRightLink">
+                
+                    <div class="headerRightLinkList">
+                    	<a href="../changecolor/changecolor.html">
+                            更換網站顏色
+                        </a>
+                    </div>
+                    
+                </div>     
+                              
+                <!--語系內容區塊-->
+                <div class="language_inArea">
+                    <div div class="language_inList">
+                        <a href="#">
+                            TW
+                        </a>
+                    </div>
+                    <div div class="language_inList">
+                        <a href="#">
+                            EN
+                        </a>
+                    </div>
+                    
+                    <div class="clearfloat">
+                    </div>
+                </div>
+                
+                <!--字的大小-->
+                <div class="fontSize_listArea"> 
+                    
+                    <div class="fontSize_list">
+                        <a href="javascript:void(0);" id="fontA">
+                            <div>A</div><span>-</span>
+                            <!--<img src="../images/font_1.png" alt="小" title="小">-->
+                        </a>
+                    </div>
+                    
+                    <div class="fontSize_list">
+                        <a href="javascript:void(0);" id="fontB">
+                        	<div>A</div>
+                            <!--<img src="../images/font_2.png" alt="中" title="中">-->
+                        </a>
+                    </div>
+                    
+                    <div class="fontSize_list">
+                        <a href="javascript:void(0);" id="fontC">
+                        	<div>A</div><span>+</span>
+                            <!--<img src="../images/font_3.png" alt="大" title="大">-->
+                        </a>
+                    </div>
+                    
+    
+                    <div class="clearfloat">
+                    </div>
+                </div>                 
+                
+                <div class="clearfloat">
+                </div>
+            
+            </div>
+
+        </div>        
+        
+        <div class="clearfloat">
+        </div>      
+      
+        <script>
+            //PC版_搜尋框伸縮效果
+            $(function(){
+                $("#search_btnPC").click(function(e) {
+                    $(".search_inAreaPC").toggleClass("active");
+                    e.stopPropagation();
+                });
+                
+                $(".search_inAreaPC").click(function(e) {
+                    e.stopPropagation();
+                });
+                
+                $(window).click(function(e) {
+                    $(".search_inAreaPC").removeClass("active");
+                });
+            });
+        </script>
+  		
+    </div>
+    
+    <!--main-->
+    <div class="main indexMain">
+        
+        <!--新增修改banner套件 modify by pekey 20190625 start-->
+        <!--輪播-->
+        <div class="banner">
+            <div class="swiper-container swiper-container_pc">
+            
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                    	<a href="#">
+                        	<img src="images/banner.png" title="pic" alt="pic" width="" height="" > <!--class="pcBanner"-->
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                    	<a href="#">
+                        	<img src="images/banner_2.png" title="pic" alt="pic" width="" height="">
+                        </a>
+                    </div>
+                </div>
+            
+                
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                <!--<div class="swiper-pagination"></div>-->
+            </div>
+        </div>
+        <!--新增修改banner套件 modify by pekey 20190625 end-->
+
+        
+        <!--新增大banner套件 modify by pekey 20190625 start-->
+        <!--輪播特效 第二塊 開始-->
+        <script type="text/javascript" src="../js/swiper-master/js/swiper.min.js"></script>
+        <script>
+            var swiper = new Swiper('.swiper-container_pc', {
+                
+                //輪播一次顯示幾張
+                slidesPerView: 1,
+                
+                //輪播位置啟始值為置中
+                centeredSlides: true,
+                
+                //自動輪播
+                //autoplay: {
+//                    delay: 5000,
+//                    disableOnInteraction: false,
+//                },
+                
+                //無限循環
+                //loop: true,
+                
+                //輪播點點顯示
+                //pagination: {
+//						el: '.swiper-container .swiper-pagination',
+//						clickable: true,
+//					},
+                
+                //左右按鍵點擊效果
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+            });
+        </script>
+        <!--輪播特效 第二塊 結束-->
+        <!--新增大banner套件 modify by pekey 20190625 end-->
+
+        <!--導盲磚-->
+		<a accesskey="C" href="#maincontent" title="主要內容區" class="maincontent" id="maincontent"> ::: </a> 
+        <!--Judy修改20200515_Start-->
+        <div id="maincontent2"></div>
+		<!--Judy修改20200515_end-->
+
+        <div class="index_News_LinkBg"> 
+        
+            <div class="wrap"> 
+    
+                <!--首頁_最新消息區塊-->
+                <div class="index_newsBg"> 
+                    
+                    <!--首頁標題樣式-->   
+                    <div class="index_tit">
+                        <div class="index_titTW">
+                            <h2>最新消息</h2>
+                        </div>
+                    </div>
+                    
+                    <!--首頁_最新消息區塊_列表區塊-->
+                    <div class="news_area">
+                    
+                        <!--列表_-->       
+                        <div class="news_list">
+                            <!--列表_日期-->
+                            <div class="news_date">
+                                2025.12.30
+                            </div>
+                            
+                            <!--列表_分類-->
+                            <div class="news_listTag">
+                                公告
+                            </div>                            
+                            
+                            <!--列表_標題-->
+                            <div class="news_title">
+                                <a href="web/news/news_in.html">
+                                    國籍生就輔辦公室核心職能包括：建構制度化之就業輔導機制、擴增實習與就業資源、規劃專業職涯課程與工作坊、強化校友網絡連結，並提供一對一就業諮詢與履歷健診等多元服務。
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <!--列表_-->       
+                        <div class="news_list">
+                            <!--列表_日期-->
+                            <div class="news_date">
+                                2025.12.18
+                            </div>
+                            
+                            <!--列表_分類-->
+                            <div class="news_listTag">
+                                課程訊息
+                            </div>                            
+                            
+                            <!--列表_標題-->
+                            <div class="news_title">
+                                <a href="web/news/news_in.html">
+                                    科技部教育學門研究精進工作坊科技部教育學門研究精進工作坊科技部教育學門研究精進工作坊科技部教育學門研究精進工作坊科技部教育學門研究精進工作坊
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <!--列表_-->       
+                        <div class="news_list">
+                            <!--列表_日期-->
+                            <div class="news_date">
+                                2025.12.30
+                            </div>
+                            
+                            <!--列表_分類-->
+                            <div class="news_listTag">
+                                公告
+                            </div>                            
+                            
+                            <!--列表_標題-->
+                            <div class="news_title">
+                                <a href="web/news/news_in.html">
+                                    國籍生就輔辦公室核心職能包括：建構制度化之就業輔導機制、擴增實習與就業資源、規劃專業職涯課程與工作坊、強化校友網絡連結，並提供一對一就業諮詢與履歷健診等多元服務。
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <!--列表_-->       
+                        <div class="news_list">
+                            <!--列表_日期-->
+                            <div class="news_date">
+                                2025.12.18
+                            </div>
+                            
+                            <!--列表_分類-->
+                            <div class="news_listTag">
+                                課程訊息
+                            </div>                            
+                            
+                            <!--列表_標題-->
+                            <div class="news_title">
+                                <a href="web/news/news_in.html">
+                                    科技部教育學門研究精進工作坊
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <!--列表_-->       
+                        <div class="news_list">
+                            <!--列表_日期-->
+                            <div class="news_date">
+                                2025.12.30
+                            </div>
+                            
+                            <!--列表_分類-->
+                            <div class="news_listTag">
+                                公告
+                            </div>                            
+                            
+                            <!--列表_標題-->
+                            <div class="news_title">
+                                <a href="web/news/news_in.html">
+                                    國籍生就輔辦公室核心職能包括：建構制度化之就業輔導機制、擴增實習與就業資源、規劃專業職涯課程與工作坊、強化校友網絡連結，並提供一對一就業諮詢與履歷健診等多元服務。
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <!--列表_-->       
+                        <div class="news_list">
+                            <!--列表_日期-->
+                            <div class="news_date">
+                                2025.12.18
+                            </div>
+                            
+                            <!--列表_分類-->
+                            <div class="news_listTag">
+                                課程訊息
+                            </div>                            
+                            
+                            <!--列表_標題-->
+                            <div class="news_title">
+                                <a href="web/news/news_in.html">
+                                    科技部教育學門研究精進工作坊
+                                </a>
+                            </div>
+                        </div>
+                                            
+                    </div>
+    
+                </div> 
+            
+                <!--首頁_熱門連結區塊-->
+                <div class="index_linkBg">
+           
+                    <!--首頁標題樣式-->
+                    <div class="index_tit">
+                        <div class="index_titTW">
+                            <h2>熱門連結</h2>
+                        </div>
+                    </div>
+                    
+                    <!--熱門連結列表區塊-->
+                    <div class="link_list_area">
+    
+                        <div class="link_list">
+                            <a href="https://s4.ntue.edu.tw/" target="_blank">
+                                教育學系
+                            </a>
+                        </div>
+    
+                        <div class="link_list">
+                            <a href="https://s4.ntue.edu.tw/" target="_blank">
+                                特殊教育學系
+                            </a>
+                        </div>
+    
+                        <div class="link_list">
+                            <a href="https://s4.ntue.edu.tw/" target="_blank">
+                                幼兒與家庭教育學系
+                            </a>
+                        </div>
+    
+                        <div class="link_list">
+                            <a href="https://s4.ntue.edu.tw/" target="_blank">
+                                教育經營與管理學系
+                            </a>
+                        </div>
+    
+                        <div class="link_list">
+                            <a href="https://s4.ntue.edu.tw/" target="_blank">
+                                教育學系
+                            </a>
+                        </div>
+    
+                        <div class="link_list">
+                            <a href="https://s4.ntue.edu.tw/" target="_blank">
+                                特殊教育學系
+                            </a>
+                        </div>
+                                
+    
+                        <!--<div class="link_list">
+                            <a href="https://s4.ntue.edu.tw/" target="_blank">
+                                教育學系
+                            </a>
+                        </div>
+    
+                        <div class="link_list">
+                            <a href="https://s4.ntue.edu.tw/" target="_blank">
+                                特殊教育學系
+                            </a>
+                        </div>
+    
+                        <div class="link_list">
+                            <a href="https://s4.ntue.edu.tw/" target="_blank">
+                                幼兒與家庭教育學系
+                            </a>
+                        </div>
+    
+                        <div class="link_list">
+                            <a href="https://s4.ntue.edu.tw/" target="_blank">
+                                教育經營與管理學系
+                            </a>
+                        </div>
+    
+                        <div class="link_list">
+                            <a href="https://s4.ntue.edu.tw/" target="_blank">
+                                教育學系
+                            </a>
+                        </div>
+    
+                        <div class="link_list">
+                            <a href="https://s4.ntue.edu.tw/" target="_blank">
+                                特殊教育學系
+                            </a>
+                        </div>  -->                             
+                                                                                        
+                        <div class="clearfloat">
+                        </div>  
+    
+                    </div>                    
+    
+                </div>
+    
+                <div class="clearfloat">
+                </div> 
+            
+            </div> 
+            
+        </div> 
+
+
+        <!--首頁_活動資訊區塊-->
+        <div class="index_activityBg">
+        
+        	<div class="wrap"> 
+   
+                <!--首頁標題樣式-->
+                <div class="index_tit">
+                    <div class="index_titTW">
+                        <h2>活動資訊</h2>
+                    </div>
+                </div>
+
+                <!--首頁內容_活動資訊內容區塊-->
+                <div class="activity_area IndxAct">
+                
+                    <!--列表-->
+                    <div class="activity_list">
+                        <div class="activity_card">
+                            <!--首頁活動資訊_列表圖片-->
+                            <div class="activityImg">
+                                <img src="images/index_activity_01.png" alt="pic" title="pic" />
+                            </div>
+                            
+                            <!--首頁活動資訊_列表下方區塊-->
+                            <div class="activityBottom">
+    
+                                    <!--類別-->
+                                    <div class="activityTag">
+                                        <a href="../activity/activity.html">
+                                            職涯講座訊息
+                                        </a>
+                                    </div>
+                                    
+                                    <!--標題-->
+                                    <div class="activityTitle">
+                                        <a href="../news/news_in.html">
+                                            菁英好課‧翻轉職涯
+                                        </a>
+                                    </div>
+                                    
+                                    <!--簡述-->
+                                    <div class="activity_description">
+                                        此次教育學院邀請到來自 Arizona 大學的教育領導貴務工作者 Dr. Devoss 來到臺北進行專題分享與工作坊, 並由教育院院長吳毓瑩教授擔任即席翻譯, 此場為 Dr. Devoss 來到臺北之後的第一場分享, 吸引了校園中教心相關科系以及相關專業人員的參與。
+                                    </div>
+                                    
+                                    <!--查看更多-->
+                                    <div class="activityMore">
+                                        <a href="../news/news_in.html">
+                                            更多資訊
+                                        </a>
+                                    </div>
+    
+                            </div>
+                        </div>        
+                    </div>
+                
+                    <!--列表-->
+                    <div class="activity_list">
+                    	<div class="activity_card">
+                        
+                            <!--首頁活動資訊_列表圖片-->
+                            <div class="activityImg">
+                                <img src="images/index_activity_02.png" alt="pic" title="pic" />
+                            </div>
+                            
+                            <!--首頁活動資訊_列表下方區塊-->
+                            <div class="activityBottom">
+    
+                                <!--類別-->
+                                <div class="activityTag">
+                                    <a href="../activity/activity.html">
+                                        專題工作坊
+                                    </a>
+                                </div>                                    
+                                
+                                <!--標題-->
+                                <div class="activityTitle">
+                                    <a href="../news/news_in.html">
+                                        一起，可以走更久
+                                    </a>
+                                </div>
+                                
+                                <!--簡述-->
+                                <div class="activity_description">
+                                    此次教育學院邀請到來自 Arizona 大學的教育領導貴務工作者 Dr. Devoss 來到臺北進行專題分享與工作坊, 並由教育院院長吳毓瑩教授擔任即席翻譯, 此場為 Dr. Devoss 來到臺北之後的第一場分享, 吸引了校園中教心相關科系以及相關專業人員的參與。
+                                </div>
+                                
+                                <!--查看更多-->
+                                <div class="activityMore">
+                                    <a href="../news/news_in.html">
+                                        更多資訊
+                                    </a>
+                                </div>
+    
+                            </div>
+                            
+                       	</div> 
+                    </div>
+                
+                    <!--列表-->
+                    <div class="activity_list">
+                    
+                    	<div class="activity_card">
+                    
+                            <!--首頁活動資訊_列表圖片-->
+                            <div class="activityImg">
+                                <img src="images/index_activity_03.png" alt="pic" title="pic" />
+                            </div>
+                            
+                            <!--首頁活動資訊_列表下方區塊-->
+                            <div class="activityBottom">
+    
+                                <!--類別-->
+                                <div class="activityTag">
+                                    <a href="../activity/activity.html">
+                                        職涯講座訊息
+                                    </a>
+                                </div>
+                                
+                                <!--標題-->
+                                <div class="activityTitle">
+                                    <a href="../news/news_in.html">
+                                        菁英好課‧翻轉職涯
+                                    </a>
+                                </div>
+                                
+                                <!--簡述-->
+                                <div class="activity_description">
+                                    此次教育學院邀請到來自 Arizona 大學的教育領導貴務工作者 Dr. Devoss 來到臺北進行專題分享與工作坊, 並由教育院院長吳毓瑩教授擔任即席翻譯, 此場為 Dr. Devoss 來到臺北之後的第一場分享, 吸引了校園中教心相關科系以及相關專業人員的參與。
+                                </div>
+                                
+                                <!--查看更多-->
+                                <div class="activityMore">
+                                    <a href="../news/news_in.html">
+                                        更多資訊
+                                    </a>
+                                </div>
+    
+                            </div>
+                        
+                        </div>
+                            
+                    </div>
+                
+                    <!--列表-->
+                    <div class="activity_list">
+                    
+                    	<div class="activity_card">
+                
+                            <!--首頁活動資訊_列表圖片-->
+                            <div class="activityImg">
+                                <img src="images/index_activity_04.png" alt="pic" title="pic" />
+                            </div>
+                            
+                            <!--首頁活動資訊_列表下方區塊-->
+                            <div class="activityBottom">
+    
+                                <!--類別-->
+                                <div class="activityTag">
+                                    <a href="../activity/activity.html">
+                                        專題工作坊
+                                    </a>
+                                </div>                                    
+                                
+                                <!--標題-->
+                                <div class="activityTitle">
+                                    <a href="../news/news_in.html">
+                                        一起，可以走更久
+                                    </a>
+                                </div>
+                                
+                                <!--簡述-->
+                                <div class="activity_description">
+                                    此次教育學院邀請到來自 Arizona 大學的教育領導貴務工作者 Dr. Devoss 來到臺北進行專題分享與工作坊, 並由教育院院長吳毓瑩教授擔任即席翻譯, 此場為 Dr. Devoss 來到臺北之後的第一場分享, 吸引了校園中教心相關科系以及相關專業人員的參與。
+                                </div>
+                                
+                                <!--查看更多-->
+                                <div class="activityMore">
+                                    <a href="../news/news_in.html">
+                                        更多資訊
+                                    </a>
+                                </div>
+    
+                            </div>
+                        
+                        </div>
+                            
+                    </div>
+                                    
+                    <div class="clearfloat">
+                    </div>
+                    
+                </div>  
+
+        	</div>
+        
+        </div>
+        
+
+    </div>
+    
+    <!--footer-->
+	<div class="footer">
+    
+    	<!--浮動按鈕區塊-->
+    	<div class="topBtn_area">
+            <!--浮動寄信鍵-->
+            <!--<div class="phoneBtn">
+                
+				<a href="../product/catalogue.html">
+                    <img src="../images/service_icon.png" width="64" height="64" />
+                </a>
+
+                <div class="tab_description">
+                    電子型錄
+                </div>
+            </div>-->
+            
+            <!--浮動top鍵-->
+            <div class="topBtn">
+                <a href="#top" onclick="javascript:$('#headercontent').focus();">
+                    <span>TOP</span>
+                </a>
+                
+                <!--標籤說明-->    
+                <div class="tab_description">
+                    回到上方
+                </div>
+            </div>
+        </div>
+        
+        <!--版腳上方區塊-->
+        <div class="footer_topArea">
+            
+            <div class="wrap">
+                
+                <!--版腳上方_左側區塊-->
+                <div class="footerTop_LeftArea"> 
+                
+                    <!--版腳資訊區塊-->
+                    <div class="footer_infoArea">
+                        
+                        <div class="footer_infoList">
+                            電話：02-2732-1104 
+                        </div>  
+                        
+                        <div class="footer_infoList">
+                            分機&nbsp;62240&nbsp;70007&nbsp;62245
+                        </div>
+                        
+                        <div class="footer_infoList">
+                            傳真：02-2739-6093 
+                        </div>    
+                           
+                        <br />
+             
+                        <div class="footer_infoList">
+                            地址：10671 臺北市和平東路二段134號
+                        </div>
+
+						<br />
+
+                        <div class="footer_infoList">
+                            E-mail： a1099925006@mail.ntue.edu.tw3
+                        </div> 
+                        
+                        <div class="clearfloat">
+                        </div>
+                    
+                    </div>
+                    
+                    <!--copyright-->
+                    <div class="copyright">
+                    
+                        <!--<div class="wrap">-->
+                        	<a accesskey="B" href="#copyright" title="版腳區" class="copyright" id="copyright"> ::: </a>
+                        	© 2019 <a target="_blank" href="http://www.geneinfo.com.tw">Greatest Idea Strategy Co.,Ltd</a> All rights reserved.
+                        <!--</div>-->
+                        
+                    </div>                     
+                
+                </div>    
+                
+                <!--版腳上方_右側區塊-->
+                <div class="footerTop_RightArea"> 
+                    <a target="_blank" href="https://www.handicap-free.nat.gov.tw/">
+                    	<img src="../images/2_0AA.png" alt="aa" title="aa" />
+                    </a>
+                </div> 
+                
+                <div class="clearfloat">
+                </div>   
+            
+            </div> 
+               
+        </div>
+ 
+    </div>
+
+
+</body>
+</html>

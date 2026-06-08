@@ -1,0 +1,149 @@
+/* 匯入共用師資版型.css */
+@import url(../../style_nav/style_team/style_team_layout.css);
+
+
+
+.in_titStyle2 {
+    gap: .625rem;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.team_info_area{
+    display: flex;
+    padding-top: 1.25rem;
+}
+    .team_info_left{
+        padding: 0;
+        padding-right: clamp(1.346rem, 1.82vw, 2.188rem);
+        margin: 0;
+        margin-right: clamp(1.73rem, 2.34vw, 2.813rem);
+        border-right: 1px solid rgba(0, 0, 0, 0.1);
+        box-sizing: border-box;
+    }
+
+    .team_card:hover {
+        -webkit-box-shadow:  none;
+        box-shadow: none;
+    }
+
+    .team_info_right{
+        width: 70%;
+        box-sizing: border-box;
+        padding: 0;
+        padding: 0 clamp(1.538rem, -0.001rem + 2.08vw, 2.5rem);
+    }
+
+
+        .faculty_profile_area{
+
+        }
+            .faculty_profile_area .text_area{
+
+            }
+
+
+
+
+.faculty_profile_area .text_bottom .tabs li{
+    /* width: calc(100% / 3);
+    font-size: 1em; */
+}
+            
+    .faculty_profile_area .text_bottom .tabs a, 
+    .faculty_profile_area .text_bottom .tabs span,
+    .faculty_profile_area .text_bottom .tab_button  {
+         width: 100%;
+         background: var(--primary_color);
+         color: #fff;
+    }
+    .faculty_profile_area .text_bottom .tabs li.active span ,
+    .faculty_profile_area .text_bottom .tabs li.active .tab_button {
+
+    }
+
+
+
+
+
+
+@media screen and (max-width: 1180px){
+
+
+    .team_info_area{
+        flex-direction: column;
+        gap: 2.5rem
+    }
+        .team_info_left{
+            width: 100%;
+            padding: 0;
+            max-width: 31.25rem;
+            margin: 0 auto;
+        }
+
+        .team_info_right{
+           width: 100%;
+           padding: 0;
+           margin: 0;
+        }
+            
+}
+
+
+
+
+@media screen and (min-width: 760.1px){
+        
+    .faculty_profile_area .text_bottom .tabs li{
+        width: calc(100% / 3);
+        font-size: 1em;
+    }
+    .faculty_profile_area  .text_bottom .tabs li span:hover::before, 
+    .faculty_profile_area  .text_bottom .tabs li .tab_button:hover::before {
+        color: var(--second_color);
+    }
+}
+
+
+@media  (max-width: 760px){
+
+	.faculty_profile_area .text_bottom .tabs li.active span::before ,
+	.faculty_profile_area  .text_bottom .tabs li.active span:hover::before,
+	.faculty_profile_area  .text_bottom .tabs li.active .tab_button::before {
+        position: absolute;
+        font-family: 'bootstrap-icons';
+        content: '\F229';
+        color: var(--second_color);
+        font-size: 1.25em;
+        line-height: 1;
+        left: 50%;
+        transform: translateX(-50%) translateY(0px);
+        bottom: 0px;
+        opacity: 0;
+        transition: 0.3s ease all;
+        z-index: 1;
+	}
+    .faculty_profile_area  .text_bottom .tabs_btn_now_arrow {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 2.75rem;
+        height: 2.75rem;
+        border: 0;
+        background: transparent;
+        color: inherit;
+    }
+
+    .faculty_profile_area  .tabs_btn_now_arrow i {
+        font-size: 0.9375em;
+        color: #ffffff;
+        /* font-weight: bolder; */
+    }
+
+
+    
+}
+
+
+

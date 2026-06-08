@@ -1,0 +1,121 @@
+/* 匯入共用榮譽事蹟版型.css */
+@import url(../../style_nav/style_honor/style_honor_layout.css);
+
+
+
+
+.in_honor_area{
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    gap: clamp(1.875rem, 3.074rem + -1.62vw, 1.125rem);
+}
+
+
+
+    .in_honor_area .honor_card {
+        -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
+        background-color: #fff;
+        border: 1px solid #ededed;
+    }
+
+        .in_honor_area  .honor_content {
+            border-radius: 0;
+            -webkit-transition: all 0.5s;
+            transition: all 0.5s;
+        }
+
+
+
+        .honor_card .date{
+            display: flex;
+            align-items: baseline;
+            justify-content: center;
+            gap: .625rem;
+            color: var(--primary_color);
+            width: fit-content;
+            font-family: var(--foreign_font2);
+        }
+            .honor_card .date .date_dd{
+                font-size: 2.1875em;
+                color: var(--second_color);
+                margin: 0;
+                font-weight: 400;
+            }
+            .honor_card .date .date_ym{
+                font-size: 0.8125em;
+                color: #afafaf;
+            }
+
+
+
+
+
+
+
+    .in_honor_area  .honor_content:hover {
+        -webkit-box-shadow: 2px 0 27px rgba(1, 129, 192, 0.3);
+        box-shadow: 2px 0 27px rgba(1, 129, 192, 0.3);
+    }
+
+
+
+@media (max-width: 1180px){
+
+}
+
+
+
+@media (max-width: 768px){
+
+    .in_honor_area{
+        grid-template-columns: repeat(2 , 1fr);
+    }
+
+}
+
+
+@media (max-width: 414px){
+
+    .in_honor_area{
+        gap: 1.25rem;
+    }
+
+
+}
+
+@media (max-width: 375px){
+
+    .in_honor_area{
+        grid-template-columns: repeat(1 , 1fr);
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

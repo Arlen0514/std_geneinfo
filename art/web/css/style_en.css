@@ -1,0 +1,32 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*回上一頁*/
+.back {
+	/* padding:30px 0px 30px; */
+}
+	.back a ,
+	.btn_area input{
+        width: auto;
+		min-width: clamp(6.25rem, 8.4375vw, 10.125rem); /* 100px , 8.4375vw , 162px */
+	}
+		.back a:hover {
+			/* opacity:0.7; */
+		}

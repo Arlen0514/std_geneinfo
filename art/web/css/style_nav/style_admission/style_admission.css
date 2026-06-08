@@ -1,0 +1,15 @@
+/* 匯入共用最新消息list.css */
+@import url(../../style_nav/style_latest_news/style_latest_news_list.css);
+
+
+
+
+/* ========================================== */
+/* 招生資訊 */
+/* ========================================== */
+
+
+/* ===== news_content .img（圖片容器） ===== */
+.admission_area .news_content .img {
+  aspect-ratio: 284 / 351.7;
+}

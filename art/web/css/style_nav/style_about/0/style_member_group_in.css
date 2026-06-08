@@ -1,0 +1,87 @@
+
+/* 會員團體內頁 */
+/* ============================================== */
+
+
+.member_group_area{
+    font-size: 1em;
+    line-height: 1.5;
+    display: flex;
+    flex-direction: row;
+    gap: clamp(0.8065rem, 1.3021vw, 1.5625rem); /* 12.90px , 1.3021vw , 25.00px */
+    /* flex-wrap: wrap; */
+}
+
+    .member_group_img{
+        min-width: clamp(11.2907rem, 18.2292vw, 21.8750rem); /* 180.65px , 18.2292vw , 350.00px */
+    }
+        .member_group_img span{
+            position: relative;
+            aspect-ratio: 364 / 271;
+            display: block;
+            overflow: hidden;
+        }
+            .member_group_img img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                position: absolute;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                right: 0;
+                float: none;
+                width: 100% !important;
+                height: 100% !important;
+                object-fit: cover;
+                transition: 0.3s ease all;
+            }
+    
+    .member_group_info{
+        margin: 0;
+        padding: 0;
+        list-style-type : none;
+        display: flex;
+        flex-direction: column;
+        gap: .9375rem;
+    }
+        .member_group_info > li{
+            margin: 0;
+            padding: 0;
+            list-style-type : none;
+            display: block;
+        }
+            .member_group_info  > li  a{
+                color: inherit;
+                text-decoration: none;
+            }
+            .member_group_info > li::before{
+                content: attr(data-name);
+                font-size: inherit;  
+                color: var(--second_color);    
+            }
+            .member_group_info  > li  a:hover{
+                color: var(--primary_color);    
+            }
+            .member_group_info > li .text_area{
+               font-size: inherit;                
+            }
+                                   
+
+
+
+
+@media (max-width: 1080px){
+
+    .member_group_area{
+        flex-direction: column;
+    }
+    .member_group_img{
+        min-width: unset; 
+        max-width: 18.75rem;
+        width: 100%;
+        margin: 0 ;
+    }
+}
+
+
